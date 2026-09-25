@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VeroHike</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <button type="button" ="Open menu" class="menu-button" id="menu-button">
+          ☰
+        </button>
+        <h1 class="app-title">VeroHike</h1>
+      </header>
+
+      <!-- nav main menu -->
+      <nav id="main-menu" class="main-menu">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <button type="button" data-section="home">Home</button>
+          </li>
+          <li class="menu-item">
+            <button type="button" data-section="hike">Rando</button>
+          </li>
+          <li class="menu-item">
+            <button type="button" data-section="history">Historique</button>
+          </li>
+
+          <li class="menu-item">
+            <button type="button" data-section="settings">Paramètres</button>
+          </li>
+        </ul>
+      </nav>
+      <!-- end nav main menu -->
+
+      <!-- Main container -->
+      <main class="app-main">
+        <!-- home -->
+        <section class="app-section active" id="home">
+          <h2>Accueil</h2>
+          <div class="home-summary">
+            <div class="summary-item">
+              <h3>Pas</h3>
+              <p id="home-steps">0</p>
+            </div>
+            <div class="summary-item">
+              <h3>Distance</h3>
+              <p id="home-distance">0 km</p>
+            </div>
+            <div class="summary-item">
+              <h3>Durée</h3>
+              <p id="home-duration">00:00:00</p>
+            </div>
+          </div>
+        </section>
+        <!-- End home -->
+        <section class="app-section" id="hike">Rando</section>
+        <section class="app-section" id="history">Historique</section>
+        <section class="app-section" id="settings">Paramètres</section>
+      </main>
+      <!-- End main container    -->
+
+      <!-- Notifications (eg: weather alerts) -->
+      <div
+        aria-live="polite"
+        class="app-notifications"
+        id="notifications"
+      ></div>
+
+      <!-- footer -->
+      <footer class="app-footer">
+        <p>© 2026 VeroHike · Open Source</p>
+      </footer>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
