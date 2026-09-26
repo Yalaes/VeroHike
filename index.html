@@ -37,26 +37,42 @@
 
       <!-- Main container -->
       <main class="app-main">
-        <!-- home -->
+        <!-- home section -->
         <section class="app-section active" id="home">
           <h2>Accueil</h2>
-          <div class="home-summary">
-            <div class="summary-item">
-              <h3>Pas</h3>
-              <p id="home-steps">0</p>
-            </div>
-            <div class="summary-item">
-              <h3>Distance</h3>
-              <p id="home-distance">0 km</p>
-            </div>
-            <div class="summary-item">
-              <h3>Durée</h3>
-              <p id="home-duration">00:00:00</p>
-            </div>
-          </div>
+
+          <button
+            type="button"
+            id="start-hike-button"
+            class="start-hike-button"
+          >
+            Démarrer la rando
+          </button>
         </section>
-        <!-- End home -->
-        <section class="app-section" id="hike">Rando</section>
+        <!-- End home section -->
+
+        <!-- Rando section  -->
+        <section class="app-section" id="hike">
+          <div class="stats">
+            <div class="stat">
+              <h3>Duration</h3>
+              <p id="hike-duration">00:00:00</p>
+            </div>
+            <div class="stat">
+              <h3>Distance</h3>
+              <p id="hike-distance">0.00 km</p> 
+          </div>
+          <div class="stat">
+              <h3>Pas</h3>
+              <p id="hike-steps">0</p>
+            </div>
+            <div class="hike-controls">
+              <button id="pause-hike-button" type="button">Pause</button>
+              <button id="stop-hike-button" type="button">Stop</button>
+            </div>
+        </section>
+        <!-- end Rando section -->
+
         <section class="app-section" id="history">Historique</section>
         <section class="app-section" id="settings">Paramètres</section>
       </main>
